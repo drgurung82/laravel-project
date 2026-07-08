@@ -1,0 +1,6 @@
+# Responsive Design
+
+# Break Point
+(Default Class) xs, sm, md, lg, xl, 2xl
+
+Mainly using - default, md, lg, xl
