@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        * {
+            margin: 0;
+        }
+
         .btn_div {
             margin: 100px;
         }
@@ -42,6 +48,67 @@
             color: white;
         }
 
+        .card {
+            width: 400px;
+            margin: 100px;
+            box-shadow: 0px 0px 5px #c7c6c6;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card_content {
+            margin: 8px 20px;
+        }
+
+        .card_content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card_content p {
+            margin-bottom: 16px;
+        }
+
+        .card_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card_footer .price {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .o_price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .discount {
+            background-color: rgb(180, 235, 180);
+            color: green;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        .card_btn {
+            color: #f40909;
+            background-color: #fdcccc;
+            text-decoration: none;
+            padding: 3px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .card_btn:hover {
+            background-color: #f40909;
+            color: white;
+        }
     </style>
 </head>
 
@@ -55,6 +122,31 @@
         <a href="" class="btn2">
             View Upcoming Session <i class="fa-solid fa-arrow-right-long"></i>
         </a>
+    </div>
+
+
+
+
+    <div class="card">
+        <div class="card_head">
+            <img src="https://codeit.com.np/storage/course-featured/01KN8WNE7C32CM5FKJ8C0Y2DXY.webp"
+                alt="Cyber Security">
+        </div>
+        <div class="card_content">
+            <h3>Cyber Security</h3>
+            <p>Comprehensive Cyber Security Course for Beginners – Learn Ethical Hacking & Network Protection</p>
+            <div class="card_footer">
+                <div>
+                    <span class="price">Rs. 2,499</span>
+                    <div>
+                        <span class="o_price">Rs. 35,000</span>
+                        <span class="discount">92% off</span>
+                    </div>
+                </div>
+
+                <a href="" class="card_btn ">Curriculum <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
     </div>
 
 
