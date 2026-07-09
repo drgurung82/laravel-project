@@ -15,166 +15,94 @@
 
 <body>
 
-    <h1>POSITION</h1>
-    <span>top, right, left, bottom</span>
-    <br><br>
-    1. Static
-    <br>
-    <br>
-    <br>
+    <!-- POSITION
+    top, right, left, bottom -->
+
+
+    <!-- 1. Static.
+
+
     2. Relative: The relative class in Tailwind CSS sets an element to position: relative. By itself, it usually doesn't
     move the element. Instead, it creates a positioning context so child elements with absolute are positioned relative
     to it.
-    <br>
-    <br>
+
     Uses of relative:
-    <br>
     a. Parent for an Absolute Child (Most Common Use)
-    <div class="relative w-64 h-40 bg-gray-200">
-        <button class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded">
-            ✕
-        </button>
-    </div>
-    <br>
-    Without relative, the button would be positioned relative to the page instead of the gray box.
-    <br>
     b. Overlay Text on an Image
-    <div class="relative">
-  <img src="image.jpg" alt="">
-  <h2 class="absolute bottom-4 left-4 text-white text-2xl">
-    Beautiful Nature
-  </h2>
-</div>
-<br>
-c. Notification Badge
-<div class="relative inline-block">
-  <button class="bg-blue-500 text-white px-4 py-2 rounded">
-    Inbox
-  </button>
+    c. Notification Badge
+    d. Dropdown Menu
+    e.Tooltip
+    f. Slightly Move an Element
 
-  <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full px-2 text-xs">
-    3
-  </span>
-</div>
-<br>
-d. Dropdown Menu
-<div class="relative inline-block">
-  <button class="bg-blue-500 text-white px-4 py-2">
-    Menu
-  </button>
+    Frequently Used Classes with relative
 
-  <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg">
-    Dropdown Content
-  </div>
-</div>
-<br>
-e.Tooltip
-<div class="relative inline-block">
-  <button>Hover Me</button>
+    Tailwind Class CSS
+    relative position: relative;
+    absolute position: absolute;
+    top-0 top: 0;
+    right-0 right: 0;
+    bottom-0 bottom: 0;
+    left-0 left: 0;
+    top-2 top: 0.5rem;
+    left-4 left: 1rem;
 
-  <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-black text-white px-2 py-1 rounded">
-    Tooltip
-  </span>
-</div>
-<br>
-f. Slightly Move an Element
-You can combine relative with offset utilities like top, left, right, or bottom.
-<div class="relative left-4 top-2 bg-blue-500 text-white p-4">
-  Shifted Box
-</div>
-<br>
-This moves the element 4 units to the right and 2 units down, while it still occupies its original space in the layout.
-<br>
-<br>
 
-    <br>
     3. Absolute: The absolute class in Tailwind CSS sets an element to position: absolute. This removes
     the element from the normal document flow and positions it relative to the nearest parent with relative,
     absolute, fixed, or sticky positioning.
-    <br>
-    <br>
+
     Uses of absolute:
-    <br>
     a. Place an element in a corner
-    <div class="relative w-64 h-64 bg-gray-200">
-        <button class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded">
-            ✕
-        </button>
-    </div>
     b. Center an element
-    <div class="relative h-64 bg-gray-100">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            Centered Text
-        </div>
-    </div>
-    <br>
     c. Overlay text on an image
-    <div class="relative h-70 w-70">
-        <img src="/Day8_Position, Owl Carousel and Aos JS/images/logo.png" alt="">
-        <h2 class="absolute bottom-4 left-4 text-black text-2xl">
-            Beautiful Nature
-        </h2>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
     d. Create notification badges
-    <div class="relative inline-block">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">
-            Messages
-        </button>
-
-        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">
-            5
-        </span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     e. Create dropdown menus
-    <div class="relative inline-block">
-        <button class="bg-blue-500 text-white px-4 py-2">
-            Menu
-        </button>
-
-        <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg">
-            <a href="#" class="block p-2 hover:bg-gray-100">Home</a>
-            <a href="#" class="block p-2 hover:bg-gray-100">About</a>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     f. Build tooltips
-    <div class="relative inline-block">
-        <button>Hover Me</button>
-
-        <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-black text-white text-sm px-2 py-1 rounded">
-            Tooltip
-        </span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    4. Sicky
-    <br>
-    <br>
-    <br>
-    5. Fixed
 
 
+    4. Sticky: The sticky class in Tailwind CSS sets an element to position: sticky. A sticky element behaves like a
+    normal (relative) element until it reaches a specified scroll position, then it "sticks" in place while the page
+    continues to scroll.
+
+    Uses of sticky:
+    a. Sticky Navigation Bar
+    b. Sticky Sidebar
+    c. Sticky Table Header
+    d. Sticky Section Heading
+    e. Sticky Footer Inside a Scrollable Container
+
+    Common Sticky Position Utilities:
+    Tailwind Class CSS
+    sticky position: sticky;
+    top-0 top: 0;
+    top-4 top: 1rem;
+    bottom-0 bottom: 0;
+    z-10 z-index: 10;
+    z-50 z-index: 50;
 
 
+    5. Fixed: The fixed class in Tailwind CSS sets an element to position: fixed. A fixed element is positioned relative
+    to the browser viewport, not its parent. It stays in the same place even when the page is scrolled.
+
+    Common Uses of fixed:
+    a. Fixed Navigation Bar
+    b. Floating Action Button (FAB)
+    c. Back-to-Top Button
+    d. Chat Support Button
+    e. Full-Screen Modal Background
+    f. Cookie Consent Banner
+    g. Notification Toast
+
+    Common Fixed Position Utilities:
+    Tailwind Class CSS
+    fixed position: fixed;
+    top-0 top: 0;
+    right-0 right: 0;
+    bottom-0 bottom: 0;
+    left-0 left: 0;
+    inset-0 top: 0; right: 0; bottom: 0; left: 0;
+    z-10 z-index: 10;
+    z-50 z-index: 50; -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
