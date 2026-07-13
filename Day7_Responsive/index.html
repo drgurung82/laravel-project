@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="bg-(--secondary) text-white py-4">
+    <header class="bg-(--secondary) text-white py-4 sticky top-0">
         <nav class="flex justify-between items-center container">
             <div class="flex items-center gap-2">
                 <img class="h-[44px]" src="images/logo.png" alt="Car Rental Logo">
@@ -58,7 +58,7 @@
             </div>
 
             <button type="button" class="lg:hidden" data-drawer-target="nav-drawer" data-drawer-show="nav-drawer"
-            aria-controls="drawer-example">
+                aria-controls="drawer-example">
                 <i class="text-2xl fa-solid fa-bars"></i>
             </button>
         </nav>
@@ -120,6 +120,7 @@
 
 
     <main>
+        <!-- Section First -->
         <section class="bg-[url('images/bg.jpeg')] bg-no-repeat bg-center bg-cover text-white">
             <div class="container">
                 <div class="w-full md:w-[50%] lg:w-[40%] xl:w-[30%] py-30">
@@ -138,10 +139,10 @@
         </section>
 
 
-
+        <!-- Section Second -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 container py-10">
-            <div class="shadow-md px-4 py-2 border border-(--primary) rounded-lg hover:bg-orange-50">
-                <h2 class="text-2xl">Our Story</h2>
+            <div class="shadow-md px-4 py-2 border border-gray-200 rounded-lg hover:bg-orange-50">
+                <h2 class="text-2xl font-bold mb-2">Our Story</h2>
                 <div class="line"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, dolore reprehenderit. Harum
@@ -149,8 +150,8 @@
                     dolorem animi iure aperiam repellendus eum officia doloremque hic nisi eos ullam soluta. Qui, culpa.
                 </p>
             </div>
-            <div class="shadow-md px-4 py-2 border border-(--primary) rounded-lg hover:bg-orange-50">
-                <h2 class="text-2xl">Our Mission</h2>
+            <div class="shadow-md px-4 py-2 border border-gray-200 rounded-lg hover:bg-orange-50">
+                <h2 class="text-2xl font-bold mb-2">Our Mission</h2>
                 <div class="line"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, dolore reprehenderit. Harum
@@ -158,8 +159,8 @@
                     dolorem animi iure aperiam repellendus eum officia doloremque hic nisi eos ullam soluta. Qui, culpa.
                 </p>
             </div>
-            <div class="shadow-md px-4 py-2 border border-(--primary) rounded-lg hover:bg-orange-50">
-                <h2 class="text-2xl">Our Vision</h2>
+            <div class="shadow-md px-4 py-2 border border-gray-200 rounded-lg hover:bg-orange-50">
+                <h2 class="text-2xl font-bold mb-2">Our Vision</h2>
                 <div class="line"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, dolore reprehenderit. Harum
@@ -167,8 +168,8 @@
                     dolorem animi iure aperiam repellendus eum officia doloremque hic nisi eos ullam soluta. Qui, culpa.
                 </p>
             </div>
-            <div class="shadow-md px-4 py-2 border border-(--primary) rounded-lg bg-green-50 hover:bg-orange-50">
-                <h2 class="text-2xl">Why Choose Us?</h2>
+            <div class="shadow-md px-4 py-2 border border-(--tertiary) rounded-lg bg-orange-50 hover:bg-orange-100">
+                <h2 class="text-2xl font-bold mb-2">Why Choose Us?</h2>
                 <div class="line"></div>
                 <ul class="space-y-3">
                     <li>
@@ -189,9 +190,461 @@
                 </ul>
             </div>
         </div>
+
+        
+        <!-- Section Third -->
+        <div class="lg:flex gap-6 container py-2">
+            <div class="lg:w-[30%] shadow-md px-4 py-2 border border-gray-200 rounded-lg hover:bg-orange-50">
+                <h2 class="text-2xl font-bold mb-2">Our Achievement</h2>
+                <div class="line"></div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-center">
+                        <div class="shadow-md px-1 py-8 border border-(--tertiary) rounded-lg hover:bg-orange-100">
+                            <i class="fa-solid fa-car text-(--primary) text-5xl"></i>
+                            <strong class="block text-2xl mt-2">500+</strong>
+                            <span class="text-gray-600">Cars Available</span>
+                        </div>
+
+                        <div
+                            class="shadow-md px-1 py-8 border border-(--tertiary) rounded-lg hover:bg-orange-100">
+                            <i class="fa-solid fa-users text-(--primary) text-5xl"></i>
+                            <strong class="block text-2xl mt-2">1,000+</strong>
+                            <span class="text-gray-600">Happy Customers</span>
+                        </div>
+
+                        <div
+                            class="shadow-md px-1 py-8 border border-(--tertiary) rounded-lg hover:bg-orange-100">
+                            <i class="fa-solid fa-location-dot text-(--primary) text-5xl"></i>
+                            <strong class="block text-2xl mt-2">25+</strong>
+                            <span class="text-gray-600">Locations</span>
+                        </div>
+
+                        <div
+                            class="shadow-md px-1 py-8 border border-(--tertiary) rounded-lg hover:bg-orange-100">
+                            <i class="fa-solid fa-trophy text-(--primary) text-5xl"></i>
+                            <strong class="block text-2xl mt-2">5+</strong>
+                            <span class="text-gray-600">Years Experience</span>
+                        </div>
+                    </div>
+  
+            </div>
+
+
+            <div class="lg:w-[43%] shadow-md px-4 py-4 border border-gray-200 rounded-lg hover:bg-orange-50">
+                <h2 class="text-2xl font-bold mb-2">Our Team</h2>
+                <div class="line mb-4"></div>
+
+                <!-- Team Members -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                    <!-- Member 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full object-cover" src="/Day7_Responsive/images/john smith.jpg"
+                            alt="John Smith">
+
+                        <strong class="mt-3">John Smith</strong>
+                        <p class="text-sm text-gray-500">CEO and Founder</p>
+
+                        <div class="flex gap-3 mt-2 text-(--primary) text-xl">
+                            <i class="fa-brands fa-facebook hover:text-blue-800"></i>
+                            <i class="fa-brands fa-twitter hover:text-sky-500"></i>
+                            <i class="fa-brands fa-linkedin hover:text-blue-700"></i>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full object-cover" src="/Day7_Responsive/images/nisha gurung.jpg"
+                            alt="Nisha Gurung">
+
+                        <strong class="mt-3">Nisha Gurung</strong>
+                        <p class="text-sm text-gray-500">Operations Manager</p>
+
+                        <div class="flex gap-3 mt-2 text-(--primary) text-xl">
+                            <i class="fa-brands fa-facebook hover:text-blue-800"></i>
+                            <i class="fa-brands fa-twitter hover:text-sky-500"></i>
+                            <i class="fa-brands fa-linkedin hover:text-blue-700"></i>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full object-cover" src="/Day7_Responsive/images/pritam kafle.jpg"
+                            alt="Pritam Kafle">
+
+                        <strong class="mt-3">Pritam Kafle</strong>
+                        <p class="text-sm text-gray-500">Project Manager</p>
+
+                        <div class="flex gap-3 mt-2 text-(--primary) text-xl">
+                            <i class="fa-brands fa-facebook hover:text-blue-800"></i>
+                            <i class="fa-brands fa-twitter hover:text-sky-500"></i>
+                            <i class="fa-brands fa-linkedin hover:text-blue-700"></i>
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full object-cover" src="/Day7_Responsive/images/sarita rai.jpg"
+                            alt="Sarita Rai">
+
+                        <strong class="mt-3">Sarita Rai</strong>
+                        <p class="text-sm text-gray-500">Marketing Manager</p>
+
+                        <div class="flex gap-3 mt-2 text-(--primary) text-xl">
+                            <i class="fa-brands fa-facebook hover:text-blue-800"></i>
+                            <i class="fa-brands fa-twitter hover:text-sky-500"></i>
+                            <i class="fa-brands fa-linkedin hover:text-blue-700"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="w-full lg:w-[24%] shadow-md px-4 py-4 border border-(--tertiary) rounded-lg bg-orange-50 hover:bg-orange-100">
+                <h2 class="text-2xl font-bold mb-2">Our Journey</h2>
+                <div class="line mb-4"></div>
+                <div class="flex gap-4">
+                    <!-- Years -->
+                    <div class="flex flex-col font-bold text-[var(--primary)] gap-3">
+                        <span>2026</span>
+                        <span>2025</span>
+                        <span>2024</span>
+                        <span>2023</span>
+                        <span>2022</span>
+                        <span>2021</span>
+                    </div>
+
+                    <!-- Journey -->
+                    <div class="flex flex-col gap-3 text-gray-700">
+                        <span>Continuing to Grow Worldwide</span>
+                        <span>Launched Premium Car Fleets</span>
+                        <span>Served 5,000+ Customers</span>
+                        <span>Expanded to 10+ Cities</span>
+                        <span>Added 100+ New Cars</span>
+                        <span>Company Founded</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Section Fourth -->
+        <div class="container mx-auto py-10">
+            <div class="w-full shadow-md p-6 border border-gray-200 rounded-lg hover:bg-orange-50">
+
+                <h2 class="text-2xl font-bold mb-2">Our Top Model Cars</h2>
+                <div class="line mb-6"></div>
+
+                <!-- Achievement Cards -->
+                <div class="flex flex-wrap gap-2">
+                    <!-- Card 1 -->
+                    <div
+                        class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/tesla-model-x.webp" alt="Tesla Model X">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">Tesla Model X</strong>
+                            <p>Electric SUV</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 160/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 200</S></span>
+                                        <span class="discount">20% off</span>
+                                    </div>
+                                </div>
+                                <a href="" class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div
+                        class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/range rover vogue.webp" alt="Range Rover Vogue">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">Range Rover Vogue</strong>
+                            <p>SUV</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 150/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 190</S></span>
+                                        <span class="discount">21.05% off</span>
+                                    </div>
+                                </div>
+
+                                <a href=""
+                                    class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div
+                        class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/porsche-cayenne.webp" alt="Porsche Cayenne">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">Porsche Caynne</strong>
+                            <p>SUV</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 140/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 180</S></span>
+                                        <span class="discount">22.22% off</span>
+                                    </div>
+                                </div>
+
+                                <a href=""
+                                    class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div
+                        class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/mercedes s-class.webp" alt="Mercedes S-Class">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">Mercedes S-Class</strong>
+                            <p>Luxary Sedan</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 130/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 170</S></span>
+                                        <span class="discount">23.53% off</span>
+                                    </div>
+                                </div>
+
+                                <a href=""
+                                    class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Card 5 -->
+                    <div
+                        class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/bmw 7 Series.webp" alt="BMW 7 Series">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">BMW 7 Series</strong>
+                            <p>Luxary Sedan</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 120/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 160</S></span>
+                                        <span class="discount">25% off</span>
+                                    </div>
+                                </div>
+
+                                <a href="" class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 6 -->
+                    <div class="w-full md:w-[48%] lg:flex-1 shadow-md p-0 overflow-hidden border border-(--tertiary) rounded-lg text-center hover:bg-orange-100">
+                        <div class="card_head w-full">
+                            <img src="/Day7_Responsive/images/audi AB.webp" alt="Audi AB">
+                        </div>
+                        <div class="card_content">
+                            <strong class="block text-xl mt-2">Audi AB</strong>
+                            <p>Luxary Sedan</p>
+                            <div class="card_footer">
+                                <div>
+                                    <strong class="block text-1xl mt-2">$ 110/ Day</strong>
+                                    <div>
+                                        <span class="o_price"><S>$ 150</S></span>
+                                        <span class="discount">26.67% off</span>
+                                    </div>
+                                </div>
+
+                                <a href="" class="border border-orange-50 bg-orange-400 hover:bg-green-500 rounded-full px-3 text-xs">Book
+                                    Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
     </main>
 
-    <footer></footer>
+    <footer class="bg-black text-white mt-2">
+        <div class="container mx-auto px-6 py-12">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-3xl font-bold text-orange-500 mb-4">
+                        Car<span class="text-white">Rental</span>
+                    </h2>
+
+                    <p class="text-gray-400 leading-7">
+                        We provide premium rental cars at affordable prices with
+                        exceptional customer service. Travel in comfort, style, and
+                        confidence wherever your journey takes you.
+                    </p>
+
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-blue-800 duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-pink-500 duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-sky-500 duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center hover:bg-blue-700 duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-orange-500 mb-5">
+                        Quick Links
+                    </h3>
+
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 duration-300 ">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 duration-300">Our Cars</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 duration-300">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-semibold text-orange-500 mb-5">
+                        Services
+                    </h3>
+
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 hover:text-orange-500 duration-300 cursor-pointer">
+                            Luxury Cars
+                        </li>
+
+                        <li class="text-gray-400 hover:text-orange-500 duration-300 cursor-pointer">
+                            SUV Rental
+                        </li>
+
+                        <li class="text-gray-400 hover:text-orange-500 duration-300 cursor-pointer">
+                            Airport Pickup
+                        </li>
+
+                        <li class="text-gray-400 hover:text-orange-500 duration-300 cursor-pointer">
+                            Corporate Rental
+                        </li>
+
+                        <li class="text-gray-400 hover:text-orange-500 duration-300 cursor-pointer">
+                            Wedding Cars
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-semibold text-orange-500 mb-5">
+                        Contact Info
+                    </h3>
+
+                    <div class="space-y-4">
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-orange-500 mt-1"></i>
+                            <span class="text-gray-400">
+                                Kathmandu, Nepal
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-orange-500"></i>
+                            <span class="text-gray-400">
+                                +977 98XXXXXXXX
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-orange-500"></i>
+                            <span class="text-gray-400">
+                                info@carrental.com
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-clock text-orange-500"></i>
+                            <span class="text-gray-400">
+                                Mon - Sat : 9AM - 7PM
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-700 mt-10 pt-6">
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                    <p class="text-gray-400 text-center">
+                        © 2026 <span class="text-orange-500 font-semibold">CarRental</span>.
+                        All Rights Reserved.
+                    </p>
+
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-orange-500 duration-300">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-orange-500 duration-300">
+                            Terms & Conditions
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
 
 
 
